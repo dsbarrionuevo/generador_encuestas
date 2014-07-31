@@ -1,0 +1,59 @@
+/* 
+    Created on : 31-jul-2014, 17:21:52
+    Author     : Diego
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fontFormal{
+    font-family: 'Nunito', serif;
+}
+.fontInformal{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #eee;
+    min-width: 1000px;
+}
+a{
+    text-decoration: none;
+}
+#cabecera{
+    width: 100%;
+    background-color: #6894FC;
+    box-shadow: 0px 4px 2px rgba(0,0,0,0.2);
+    padding: 15px;
+}
+#tituloSitio{
+    width: 80%;
+    margin: 0px auto;
+    color:#fff;
+    text-shadow: 0px 1px 2px #000;
+}
+#contenido{
+    width: 80%;
+    margin:10px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.2);
+}
+.pregunta{
+    padding: 10px;
+}
+.seccionPregunta{
+    margin-bottom: 10px;
+}
+.inputTexto{
+    padding:5px;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.2);
+    border:solid 1px rgba(0,0,0,0.2);
+    border-bottom: solid 2px rgba(0,0,0,0.4);
+    transition: all 1s;
+}
+.inputTexto:focus{
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.2), 0px 0px 4px #6894FC;
+}

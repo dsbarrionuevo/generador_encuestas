@@ -1,0 +1,59 @@
+
+/* Colores tipificados para los botones */
+.azul{
+    background-color:#3F6DD9!important;
+}
+.rojo{
+    background-color:#F22E2E!important;
+}
+.verde{
+    background-color:#67C439!important;
+}
+.amarrillo{
+    background-color:#DDE639!important;
+}
+.rosado{
+    background-color:#E8587A!important;
+}
+.morado{
+    background-color:#C258E8!important;
+}
+.cian{
+    background-color:#3FD9AB!important;
+}
+.naranja{
+    background-color:#F2AE2E!important;
+}
+.rojizo{
+    background-color:#F26F2E!important;
+}
+.bordo{
+    background-color:#AD2A18!important;
+}
+/* Estilos para todos los botones*/
+.boton{
+    color:#fff;
+    padding:5px 15px;
+    font-weight:bold;
+    font-family:sans-serif;
+    font-size:16px;
+    text-align: center;
+    background-color: #bbb;
+}
+.boton:hover{
+    cursor: pointer;
+}
+.botonWindows{
+    font-weight:bold;
+    text-shadow:0px 2px 1px #000;
+    border:1px solid rgba(0,0,0,0.4);
+    border-radius:2px;
+    background-color:#F51414;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 70%, rgba(0,0,0,0.2) 100%),
+        linear-gradient(to top, rgba(0,0,0,0.0) 0%,rgba(0,0,0,0.4) 49%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.5) 100%);
+    box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.4);
+}
+.botonWindows:hover{
+    background-image:linear-gradient(to right, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 70%, rgba(0,0,0,0.2) 100%),
+        linear-gradient(to top, rgba(0,0,0,0.0) 0%,rgba(0,0,0,0.4) 49%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.5) 100%), linear-gradient(to top, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.0) 60%);
+}
