@@ -6,6 +6,7 @@ table.formulario{
     box-sizing: border-box;
     border-collapse: collapse;
     border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 2px rgba(0,0,0.0.4);
 }
 table.formulario caption{
     padding: 10px;
@@ -49,4 +50,9 @@ table.formulario tr.filaDoble5050 td:first-child{
 table.formulario tr.filaDoble5050 td:last-child{
     width: 50%;
 }
-
+.celdaTipoPregunta{
+    padding: 0px!important;
+}
+.tablaTipoPregunta{
+    width:100%!important;
+}

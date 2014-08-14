@@ -10,6 +10,7 @@
         <link href="<?php echo $global_ruta_web; ?>/css/formulario.css" rel="stylesheet" type="text/css" />
         <!-- JavaScript Index -->
         <script src="<?php echo $global_ruta_web; ?>/js/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="<?php echo $global_ruta_web; ?>/js/encuesta_crear.js" type="text/javascript"></script>
     </head>
     <body class="fontInformal">
         <div id="cabecera" class="azul">
@@ -47,7 +48,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <table class="datosPregunta formulario centrado">
+                        <table class="pregunta formulario centrado" id="pregunta1">
                             <caption>
                                 Pregunta
                             </caption>
@@ -72,19 +73,85 @@
                                     Tipo de pregunta
                                 </td>
                                 <td>
-                                    <select class="general">
-                                        <option>Seleccione un tipo de pregunta</option>
-                                        <option>Texto</option>
-                                        <option>Comentario</option>
-                                        <option>Radio</option>
-                                        <option>Check</option>
+                                    <select class="slcTipoPregunta general">
+                                        <option value="0">Seleccione un tipo de pregunta</option>
+                                        <option value="1">Texto</option>
+                                        <option value="2">Comentario</option>
+                                        <option value="3">Radio</option>
+                                        <option value="4">Check</option>
                                     </select>
+                                </td>
+                            </tr>
+                            <tr class="filaPreguntaTipo filaPreguntaTipoTexto">
+                                <td colspan="2" class="celdaTipoPregunta">
+                                    <table class="tablaTipoPregunta">
+                                        <tr class="filaDoble4060">
+                                            <td>
+                                                Respuesta
+                                            </td>
+                                            <td>
+                                                <input type="text" class="general fillParent"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="filaPreguntaTipo filaPreguntaTipoComentario">
+                                <td colspan="2" class="celdaTipoPregunta">
+                                    <table class="tablaTipoPregunta">
+                                        <tr class="filaDoble4060">
+                                            <td>
+                                                Comentario
+                                            </td>
+                                            <td>
+                                                <textarea type="text" class="general fillParent"></textarea>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="filaPreguntaTipo filaPreguntaTipoRadio">
+                                <td colspan="2" class="celdaTipoPregunta">
+                                    <table class="tablaTipoPregunta">
+                                        <tr class="filaDoble4060">
+                                            <td>
+                                                <input type="radio" />
+                                                <label>
+                                                    Opción 1
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="general fillParent"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="filaPreguntaTipo filaPreguntaTipoCheck">
+                                <td colspan="2" class="celdaTipoPregunta">
+                                    <table class="tablaTipoPregunta">
+                                        <tr class="filaDoble4060">
+                                            <td>
+                                                <input type="checkbox" />
+                                                <label>
+                                                    Opción 1
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="general fillParent"/>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td >
-                                    <input type="button" value="Agregar pregunta" class="boton botonWindows azul"/>
+                                    <input type="button" value="Aceptar" class="botonAceptarPregunta boton botonWindows azul"/>
+                                    <input type="checkbox" />
+                                    <label>
+                                        Hacer obligatoria esta pregunta
+                                    </label>
                                 </td>
                             </tr>
                         </table>

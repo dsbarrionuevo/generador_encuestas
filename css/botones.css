@@ -30,6 +30,9 @@
 .bordo{
     background-color:#AD2A18!important;
 }
+.deshabilitado{
+    background-color:#BDBDBD!important;
+}
 /* Estilos para todos los botones*/
 .boton{
     color:#fff;
